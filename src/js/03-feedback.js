@@ -19,7 +19,6 @@ function fillFormData() {
 
 function onFormInput(e) {
   let formData = localStorage.getItem(LS_KEY);
-  console.log(formData);
   formData = formData ? JSON.parse(formData) : {};
   formData[e.target.name] = e.target.value;
   localStorage.setItem(LS_KEY, JSON.stringify(formData));
